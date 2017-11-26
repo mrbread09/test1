@@ -29,7 +29,7 @@
       }
     },
     "versionFirst": "4.4.1",
-    "uniqCompNum": 31,
+    "uniqCompNum": 36,
     "versionPublish": "4.4.1",
     "favicon": "",
     "noImageResize": "",
@@ -76,74 +76,20 @@
           "_params": {}
         },
         {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".title": {
-              "margin-bottom": "2rem"
-            },
-            "a:not([href]):not([tabindex])": {
-              "color": "#fff",
-              "border-radius": "3px"
-            },
-            "a.btn-white:not([href]):not([tabindex])": {
-              "color": "#333"
-            },
-            ".multi-horizontal": {
-              "flex-grow": "1",
-              "-webkit-flex-grow": "1",
-              "max-width": "100%"
-            },
-            ".input-group-btn": {
-              "display": "block"
-            },
-            "h2": {
-              "color": "#333",
-              "letter-spacing": "0.1em",
-              "margin-bottom": "2rem"
-            },
-            "h3": {
-              "color": "#767676",
-              "letter-spacing": "0.03em",
-              "line-height": "1.8",
-              "margin-bottom": "2rem"
-            },
-            ".mbr-section-subtitle P": {
-              "text-align": "left"
-            },
-            ".mbr-form input, textarea": {
-              "border-radius": "0px",
-              "padding-left": "15px"
-            },
-            "@media (max-width: 991px)": {
-              "h2": {
-                "text-align": "center"
-              },
-              "h3": {
-                "text-align": "center"
-              },
-              ".input-group-btn": {
-                "text-align": "center"
-              },
-              ".social-list": {
-                "text-align": "center"
-              }
-            }
-          },
-          "_name": "form3",
-          "_customHTML": "<section class=\"mbr-section form3\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/06.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=l8UXhtqV6hU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n         \n        <div mbr-form class=\"media-container-column col-lg-6 col-md-10 col-sm-12 align-center\">\n            <h2 mbr-if=\"showTitle\" class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\">\n                CONTACT US\n            </h2>    \n            <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste temporibus officia doloribus laboriosam porro assumenda, enim? Facere veritatis totam atque sed similique sit architecto reiciendis. Similique provident, laborum adipisci facilis.\n            </h3>\n            <div data-form-alert hidden>Thanks for filling out the form!</div>    \n            <form class=\"mbr-form\" action=\"mrbread@hanmail.net\" method=\"post\" name=\"Mobirise Form\">\n                <div class=\"row row-sm-offset\">\n                    <div class=\"col-md-12 multi-horizontal\" data-for=\"name\">\n                        <div class=\"form-group\">        \n                            <input type=\"text\" class=\"form-control\" name=\"name\" placeholder=\"You Name\" data-form-field=\"Name\" required>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12 multi-horizontal\" data-for=\"email\" hidden=\"hidden\">\n                        <div class=\"form-group\">       \n                            <input type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"You Email\" data-form-field=\"Email\" required hidden=\"hidden\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-12 multi-horizontal\" data-for=\"phone\">\n                        <div class=\"form-group\">       \n                            <input type=\"tel\" class=\"form-control\" name=\"phone\" placeholder=\"You Phone\" data-form-field=\"Phone\">\n                        </div>\n                    </div>\n                </div>\n                <div class=\"form-group\" data-for=\"message\">        \n                    <textarea type=\"text\" class=\"form-control\" name=\"message\" rows=\"7\" placeholder=\"Message\" data-form-field=\"Message\"></textarea>\n                </div>\n                <span mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" class=\"input-group-btn\"><a href type=\"submit\" class=\"btn btn-form btn-black\">SEND</a></span>\n            </form>\n        </div>\n    </div>\n  </div>      \n</section>",
-          "_cid": "qC6jjSm2N0",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "form3-u"
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": " <iframe id=\"JotFormIFrame-73294303439458\" onload=\"window.parent.scrollTo(0,0)\" allowtransparency=\"true\" src=\"https://form.jotform.me/73294303439458\" frameborder=\"0\" style=\"width: 1px; min-width: 100%; height:539px; border:none;\" scrolling=\"no\"> </iframe> {JS_CODE_0}",
+          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-z",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script type=\"text/javascript\"> var ifr = document.getElementById(\"JotFormIFrame-73294303439458\"); if(window.location.href && window.location.href.indexOf(\"?\") > -1) { var get = window.location.href.substr(window.location.href.indexOf(\"?\") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf(\"?\") > -1 ? src + \"&\" + get : src + \"?\" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(\":\"); if (args.length > 2) { iframe = document.getElementById(\"JotFormIFrame-\" + args[2]); } else { iframe = document.getElementById(\"JotFormIFrame\"); } if (!iframe) return; switch (args[0]) { case \"scrollIntoView\": iframe.scrollIntoView(); break; case \"setHeight\": iframe.style.height = args[1] + \"px\"; break; case \"collapseErrorPage\": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + \"px\"; } break; case \"reloadPage\": window.location.reload(); break; } var isJotForm = (e.origin.indexOf(\"jotform\") > -1) ? true : false; if(isJotForm && \"contentWindow\" in iframe && \"postMessage\" in iframe.contentWindow) { var urls = {\"docurl\":encodeURIComponent(document.URL),\"referrer\":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({\"type\":\"urls\",\"value\":urls}), \"*\"); } }; if (window.addEventListener) { window.addEventListener(\"message\", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent(\"onmessage\", handleIFrameMessage); } </script>"
+          ]
         },
         {
           "_styles": {
